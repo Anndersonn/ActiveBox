@@ -1,0 +1,54 @@
+// main: ../style.less
+
+.header {
+    height: 100%;
+    background: url("img/bg.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 7rem;
+}
+
+.header__inner {
+    padding: 3.2rem 0;
+    border-bottom: 1px solid fade(white, 30%);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header__link {
+    display: flex;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: fade(white, 50%);
+        text-transform: uppercase;
+        margin-left: 3rem;
+    }
+
+    a:hover {
+        transition: .3s linear;
+        color: fade(white, 100%);
+    }
+
+    @media @tablet {
+        display: none;
+    }
+}
+
+.header__nav {
+    font-size: 0.92rem;
+    font-weight: 700;
+
+}
+
+.burger {
+    display: none;
+
+    @media @tablet {
+        display: block;
+
+    }
+}

@@ -1,0 +1,77 @@
+// main: ../style.less
+
+.intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+}
+
+
+.intro__title {
+    text-align: center;
+}
+
+.big__title {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+
+    @media @tablet {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+        @media @mobile {
+        font-size: 2.5rem;
+            line-height: 2.5rem;
+    }
+
+}
+
+.small__title {
+    font-size: 1.57rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 6.07rem;
+
+
+    @media @tablet {
+        padding: 0 1rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+            @media @mobile {
+        font-size: 1rem;
+            line-height: 1rem;
+    }
+}
+
+.btn__title {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: fade(white, 80%);
+    padding: 1.4rem 3rem;
+
+    border: 1px solid transparent;
+    background-color: fade(red, 70%);
+    border-radius: 2px;
+
+    &:hover {
+        color: white;
+        background-color: red;
+        transition: .3s linear
+    }
+
+
+
+}

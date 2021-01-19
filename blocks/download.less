@@ -1,0 +1,77 @@
+// main: ../style.less
+
+.download {
+    padding-top: 3rem;
+    margin-bottom: 7.1rem;
+}
+
+.download__container {
+
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 1198px;
+    height: auto;
+    margin: 0 auto;
+
+
+}
+
+.download__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.download__title {
+    font-weight: 200;
+    font-size: 2rem;
+    line-height: 1.57rem;
+    margin-bottom: 1.7rem;
+
+    @media @mobile {
+        font-size: 1.3rem;
+            line-height: 2rem;
+    }
+}
+
+.download__subtitle {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 3rem;
+
+        @media @mobile {
+        font-size: .6rem;
+    }
+}
+
+
+.download__button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.download__btn {
+        text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: fade(white, 80%);
+    padding: 1rem 5rem;
+
+    border: 1px solid transparent;
+    background-color: fade(red, 70%);
+    border-radius: 2px;
+
+    &:hover {
+    color:white;
+    background-color: red;
+    transition: .3s linear}
+}
+
